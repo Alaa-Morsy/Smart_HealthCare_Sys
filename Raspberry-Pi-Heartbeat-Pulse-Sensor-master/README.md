@@ -2,4 +2,7 @@
 
 Tutorial (english): https://tutorials-raspberrypi.com/raspberry-pi-heartbeat-pulse-measuring
 
-Tutorial (german): https://tutorials-raspberrypi.de/raspberry-pi-puls-herzfrequenz-messen
+Begin :
+   -> MCP3008
+   -> PulseSensor
+   -> Example
