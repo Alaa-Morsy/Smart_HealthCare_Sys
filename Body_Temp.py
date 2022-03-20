@@ -15,9 +15,15 @@ sensor = W1ThermSensor()                # create an object to store a connection
 while True:
     temperature = sensor.get_temperature()   # get the current temperature from the DS18B20 sensor,
                                              # and then store it in a variable called temperature. 
+    
     print("The temperature is %s celsius" % temperature) # print the data in the form of a sentence that will tell the us what the temperature is in celsius.
                                                          # using string formatting, where we would like the temperature data to be printed in the sentence, 
                                                          #  we use an %s which will format the temperature data from an float to a string 
-    time.sleep(1)                            # wait for 1 second between taking a temperature reading.
+    
+    if temperature == 37:                    # temperature threshold
+        # *** take an action regarding the cloud ***
+        break                                # break out of the loop
+            
+    time.sleep(60)                            # wait for 60 seconds between taking a temperature reading.
 
     # end of program
