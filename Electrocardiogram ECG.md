@@ -6,3 +6,6 @@ ADS1115 Code (not sure):
     
 AD8232 Code (not sure):
     https://github.com/eclipse/upm/blob/master/examples/python/ad8232.py
+    
+ ADS1115 _Potintiometer
+   https://howchoo.com/pi/how-to-install-a-potentiometer-on-a-raspberry-pi
