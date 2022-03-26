@@ -1,5 +1,4 @@
 import sys
-import RPi.GPIO as GPIO
 from time import sleep
 import urllib3
 import requests
@@ -14,10 +13,14 @@ while(a < 1000):
     f = http.request('GET',baseURL +str(a))
     f.read()
     f.close()
-    sleep(1)
+    sleep(5)
     c = a
     a = a + b
     b = c
     if a>5:
-        requests.post("https://maker.ifttt.com/trigger/111/with/key/nRm3Yf4BU-Irdwh4MnqoXmsH4SoHxY7wf7EpsgvFV26Irdwh4MnqoXmsH4SoHxY7wf7EpsgvFV26")
+            report = {}
+            report["value1"] = a
+            requests.post('https://maker.ifttt.com/trigger/111/with/key/nRm3Yf4BU-Irdwh4MnqoXmsH4SoHxY7wf7EpsgvFV26',data=report)
+
 print ("Program has ended")
+
