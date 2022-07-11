@@ -30,10 +30,6 @@ while i<200:
   # Read the light sensor data
   ECG_level = ReadChannel(0)
   ECG_volts.append(ConvertVolts(ECG_level,2))
-#   file = open('ECG_Radings.csv','a',newline='')
-#   wr=csv.writer(file)
-#   wr.writerow(ConvertVolts(ECG_level,2))
-#   file.close()
 
   # Print out results
   print( "--------------------------------------------" ) 
