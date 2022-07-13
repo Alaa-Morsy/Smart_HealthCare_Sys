@@ -15,8 +15,6 @@ while True:
     hrm = HeartRateMonitor(print_raw=args.raw, print_result=(not args.raw))
     hrm.start_sensor()
     time.sleep(120)
-    #print('ECG sensors starting...')
-    #ECG = ECg_Readings()
     try:
         time.sleep(args.time)
     except KeyboardInterrupt:
