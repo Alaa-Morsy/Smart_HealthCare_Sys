@@ -29,16 +29,7 @@ def ECg_Readings():
 
         # Read the light sensor data
         ECG_level = ReadChannel(0)
-        ECG_volts.append(ConvertVolts(ECG_level,2))
-#         now = datetime.datetime.now()
-#         timeString = now.strftime("%Y-%m-%d %H:%M:%S.%f")
-
-        # Print out results
-        #print( "--------------------------------------------" ) 
-        print("ECG_volts : {} ({}V)".format(i,ECG_volts[i])) 
-        #with open('ECG_Readings.csv', 'a') as log:
-            #log.write("{},{}\n".format(timeString, ECG_volts[i]))
-       
+        ECG_volts.append(ConvertVolts(ECG_level,2)) 
         time.sleep(0.003)
 
     #pl.plot(ECG_volts,label="ECG")
