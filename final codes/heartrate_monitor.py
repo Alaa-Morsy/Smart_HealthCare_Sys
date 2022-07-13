@@ -74,7 +74,7 @@ class HeartRateMonitor(object):
                                 report["value1"] = temperature
                                 report["value2"] = self.bpm
                                 report["value3"] = spo2
-                                #requests.post('https://maker.ifttt.com/trigger/123/with/key/nRm3Yf4BU-Irdwh4MnqoXmsH4SoHxY7wf7EpsgvFV26',data=report)
+                                requests.post('https://maker.ifttt.com/trigger/123/with/key/nRm3Yf4BU-Irdwh4MnqoXmsH4SoHxY7wf7EpsgvFV26',data=report)
                             print("BPM: {0}, SpO2: {1}".format(self.bpm, spo2))
                             print("The temperature is %s celsius" %temperature)
                             
