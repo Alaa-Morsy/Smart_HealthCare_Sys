@@ -17,4 +17,4 @@ The Sensors Used :
 3.   Electrocardiogram sensor   (AD8232 ECG module & ADS1115 Analogue-to-Digital Converter module)
 4.   Fall detection sensor      (MPU9250 Micro Electro-Mechanical Systems (MEMS) module)
 
-///Note: Arduino Uno is used as sensors'operation checker
+#Note: Arduino Uno is used as sensors'operation checker
