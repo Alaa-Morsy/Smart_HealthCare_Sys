@@ -14,7 +14,7 @@ The project used two devices to do its mission:
 The Sensors Used :
 1.   Body temperature sensor    (DS18B20 body temperature module)
 2.   Pulse oximeter sensor      (MAX30102 oxygen saturation & heartbeat rate module)
-3.   Electrocardiogram sensor   (AD8232 ECG module & ADS1115 Analogue-to-Digital Convrter module)
+3.   Electrocardiogram sensor   (AD8232 ECG module & ADS1115 Analogue-to-Digital Converter module)
 4.   Fall detection sensor      (MPU9250 Micro Electro-Mechanical Systems (MEMS) module)
 
 
