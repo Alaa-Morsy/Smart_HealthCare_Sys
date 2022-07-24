@@ -1,19 +1,20 @@
 # Smart_HealthCare_Sys
-The IOT Based Health Care System is a healthcare device based on the IOT platform for the patients and doctors.
-It provides measurements of body parameters like ECG, Temperature, Oxygen saturation, Heartbeat.
-This system also generates an alert when it is required that means at the time of any critical conditions and notifications about the medicines, fall detection, conditions, etc.
 
-In this project we are using Rasperry Pi Model 3 B+
--> Raspberry Pi is a series of small single-board computers (SBCs).
-    it feature a system on a chip (SoC) with an integrated ARM-compatible central processing unit (CPU) and on-chip graphics processing unit (GPU)
-    Architecture : Quad-core 64-bit ARM cortex A53 CPU
-    Programming Language : Python3
+The Smart Healthcare System is an IoT based device to help old people -65 years or above- with chronic diseases, who lives with a caregiver, do their checkups and detect diseases related to imbalance with automated patient monitoring and critical cases alerting.
+
+It provides measurements of body parameters like Electrocardiogram (ECG), body temperature, oxygen saturation, heartbeat rate.
+
+The project used two devices to do its mission:
+
+1- An on-demand device for gathering all body parameters using Raspberry Pi Model 3 B+ and some sensors. Then, send those parameters to ThingSpeak cloud platform and display them on a Mobile application -made using MIT APP Inventor. If any measured parameter passes the threshold, an emergency email will be sent to the doctor with the patient’s records.
+
+2- A portable device for Fall Detection using NodeMCU ESP8266. If a falling threshold is detected, an SMS will be sent to the caregiver.
+
 
 The Sensors Used :
-1.   Body temperature sensor 
-2.   Heart pulse sensor 
-3.   Pulse oximeter sensor
-4.   Electrocardiogram sensor
-5.   Fall detection sensor
+1.   Body temperature sensor    (DS18B20 body temperature module)
+2.   Pulse oximeter sensor      (MAX30102 oxygen saturation & heartbeat rate module)
+3.   Electrocardiogram sensor   (AD8232 ECG module & ADS1115 Analogue-to-Digital Convrter module)
+4.   Fall detection sensor      (MPU9250 Micro Electro-Mechanical Systems (MEMS) module)
 
 
